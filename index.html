@@ -23,6 +23,22 @@
     <header class="cabecalho">
         <nav class="cabecalho__nav">
             <ul class="cabecalho__nav_list">
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-menu">
+                    <label for="menu">
+                        <img src="assets/icons/menu.svg" alt="menu">
+                    </label>
+                    <input type="checkbox" name="menu" id="menu" hidden>
+
+                    <nav class="cabecalho__menu-hamburguer">
+                        <ul>
+                            <li><a href="#" class="cabecalho__nav_list_link cabecalho__menu-hamburguer_link">Sobre
+                                    nós</a></li>
+                            <li><a href="#" class="cabecalho__nav_list_link cabecalho__menu-hamburguer_link">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+
                 <li>
                     <h1 class="cabecalho__logo">
                         <img src="./assets/logo-favicon/logo.svg" alt="Logo da UseDev">
@@ -154,9 +170,11 @@
     </section>
     <section class="newsletter">
         <h3 class="newsletter__titulo">Inscreva-se para ganhar descontos!</h3>
-        <p class="newsletter__texto">Cadastre seu email, receba novidades e descontos imperdíveis antes de todo mundo!</p>
+        <p class="newsletter__texto">Cadastre seu email, receba novidades e descontos imperdíveis antes de todo mundo!
+        </p>
         <form class="newsletter__form">
-            <input class="newsletter__form_item newsletter__form_item-input" type="email" name="femail" id="femail" placeholder="Digite seu melhor endereço de email">
+            <input class="newsletter__form_item newsletter__form_item-input" type="email" name="femail" id="femail"
+                placeholder="Digite seu melhor endereço de email">
             <input class="newsletter__form_item newsletter__form_item-botao" type="submit" value="Inscrever">
         </form>
     </section>
@@ -168,41 +186,41 @@
             </div>
             <div class="rodape__coluna">
                 <h5 class="rodape__coluna_titulo">Funcionamento</h5>
-                    <ul class="rodape__coluna_list">
-                        <li class="rodape__coluna_list_item">Segunda a Sexta - 8h às 18h</li>
-                        <li class="rodape__coluna_list_item">
-                            <a href="mailto:sac@usedev.com.br">
-                                sac@usedev.com.br
-                            </a>
-                        </li>
-                        <li class="rodape__coluna_list_item">
-                            <a href="tel:+550800541320">
-                                0800 541 320
-                            </a>
-                        </li>
-                    </ul>
+                <ul class="rodape__coluna_list">
+                    <li class="rodape__coluna_list_item">Segunda a Sexta - 8h às 18h</li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="mailto:sac@usedev.com.br">
+                            sac@usedev.com.br
+                        </a>
+                    </li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="tel:+550800541320">
+                            0800 541 320
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="rodape__coluna">
                 <h5 class="rodape__coluna_titulo">Institucional</h5>
                 <nav>
                     <ul class="rodape__coluna_list">
                         <li class="rodape__coluna_list_item">
-                            <a  href="#">
+                            <a href="#">
                                 Sobre nós
                             </a>
                         </li>
                         <li class="rodape__coluna_list_item">
-                            <a  href="#">
+                            <a href="#">
                                 Contato
                             </a>
                         </li>
                         <li class="rodape__coluna_list_item">
-                            <a  href="#">
+                            <a href="#">
                                 Política de Privacidade
                             </a>
                         </li>
                         <li class="rodape__coluna_list_item">
-                            <a  href="#">
+                            <a href="#">
                                 LGPD - Lei de proteção de dados
                             </a>
                         </li>
@@ -213,20 +231,20 @@
                 <h5 class="rodape__coluna_titulo">Informações</h5>
                 <nav class="rodape__coluna_list">
                     <li class="rodape__coluna_list_item">
-                        <a  href="#">
+                        <a href="#">
                             Entregas
                         </a>
                     </li>
                     <li class="rodape__coluna_list_item">
-                        <a  href="#">
+                        <a href="#">
                             Garantia
                         </a>
-                    </li> 
+                    </li>
                     <li class="rodape__coluna_list_item">
-                        <a  href="#">
+                        <a href="#">
                             Trocas e devoluções
                         </a>
-                    </li> 
+                    </li>
                 </nav>
             </div>
         </div>
@@ -267,10 +285,10 @@
             </div>
         </div>
     </footer>
-    
-        <div class="rodape__copyright">
-                <p class="rodape__copyright_texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
-        </div>
+
+    <div class="rodape__copyright">
+        <p class="rodape__copyright_texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </div>
 </body>
 
 </html>
