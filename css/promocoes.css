@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .promocoes {
-    padding: 32px 12.5%;
+    padding: 32px 10%;
 }
 
 .promocoes__list {
@@ -51,12 +51,32 @@
 }
 
 .promocoes__list_link {
+    padding: 20px 0;
+    margin: 40px 0;
+    text-align: right;
+}
+
+.promocoes__list_link a {
     font-size: 20px;
     font-weight: 700;
     font-family: var(--fonte-texto);
     line-height: 120%;
     color: var(--cor-fundo-botao);
-    padding: 20px 0;
-    margin: 40px 0;
     text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .promocoes {
+        padding: 40px 60px;
+    }
+
+    .promocoes__list_link {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promocoes {
+        padding: 32px 24px;
+    }
 }
