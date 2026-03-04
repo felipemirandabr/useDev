@@ -29,3 +29,18 @@ body {
 main {
     width: 100%;
 }
+
+
+.material-symbols-outlined.filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined.invisible {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .material-symbols-outlined.invisible {
+    display: inline-block;
+    }
+}

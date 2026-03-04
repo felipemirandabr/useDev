@@ -7,12 +7,8 @@
     <title>UseDev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=info" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=shopping_bag" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -67,7 +63,7 @@
                     </a>
                 </li>
                 <li class="cabecalho__nav_list_item cabecalho__nav_list_item-carrinho">
-                    <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-carrinho">
+                    <a href="carrinho.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-carrinho">
                         <img src="./assets/icons/carrinho.svg" alt="carrinho">
                     </a>
                 </li>
@@ -77,9 +73,11 @@
     <section class="banner">
     </section>
     <section class="carrinho">
-        <h2 class="carrinho__titulo">Carrinho de Compras</h2>
+        <h2 class="carrinho__titulo"><span class="material-symbols-outlined invisible">
+arrow_back_ios
+</span>Carrinho de Compras</h2>
         <div class="carrinho__aviso">
-            <span class="material-symbols-outlined">info</span>
+            <span class="material-symbols-outlined filled">info</span>
             <p class="carrinho__aviso-texto">Atenção, os produtos no carrinho não ficam reservados. Finalize a compra
                 para garantir! :)</p>
         </div>
@@ -87,18 +85,57 @@
             <div class="carrinho__container-detalhes">
                 <h3 class="carrinho__container-titulo">Detalhes da compra</h3>
                 <div class="carrinho__card">
-                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
-                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        <picture>
+                            <source media="(max-width: 1024px)" srcset="./assets/carrinho/camiseta-capy-tablet-mobile.png">
+                            <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        </picture>
                         <div class="carrinho__card-info">
                             <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
                             <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
-                        </div>
                     </div>
                     <div class="carrinho__card-coluna">
                         <p class="carrinho__card-preco">R$ 28</p>
                     </div>
                     <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Quantidade: </h5>
+                        <h5 class="carrinho__card-subtitulo">Quantidade: </h5>
+                        <div class="carrinho__card-coluna-botoes">
+                            <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
+                            <input type="number" name="fnumber" id="fnumber" value="2">
+                            <img src="./assets/icons/mais.svg" alt="Aumentar quantidade">
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrinho__card-subtitulo">Tamanho: </h5>
+                        <select name="fsize" id="fsize">
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G" selected>G</option>
+                            <option value="GG">GG</option>
+                            <option value="XG">XG</option>
+                            <option value="XGG">XGG</option>
+                        </select>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrinho__card-subtitulo">Excluir</h5>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <hr class="divisoria__card">
+                <div class="carrinho__card">
+                        <picture>
+                            <source media="(max-width: 1024px)" srcset="./assets/carrinho/camiseta-capy-tablet-mobile.png">
+                            <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        </picture>
+                        <div class="carrinho__card-info">
+                            <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
+                            <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <p class="carrinho__card-preco">R$ 28</p>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrinho__card-subtitulo">Quantidade: </h5>
                         <div class="carrinho__card-coluna-botoes">
                             <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
                             <input type="number" name="fnumber" id="fnumber" value="2">
@@ -122,13 +159,15 @@
                         <span class="material-symbols-outlined">delete</span>
                     </div>
                 </div>
+                <hr class="divisoria__card">
                 <div class="carrinho__card">
-                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
-                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        <picture>
+                            <source media="(max-width: 1024px)" srcset="./assets/carrinho/camiseta-capy-tablet-mobile.png">
+                            <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        </picture>
                         <div class="carrinho__card-info">
                             <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
                             <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
-                        </div>
                     </div>
                     <div class="carrinho__card-coluna">
                         <p class="carrinho__card-preco">R$ 28</p>
@@ -142,7 +181,7 @@
                         </div>
                     </div>
                     <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Tamanho: </h5>
+                        <h5 class="carrinho__card-subtitulo">Tamanho: </h5>
                         <select name="fsize" id="fsize">
                             <option value="PP">PP</option>
                             <option value="P">P</option>
@@ -154,43 +193,7 @@
                         </select>
                     </div>
                     <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Excluir</h5>
-                        <span class="material-symbols-outlined">delete</span>
-                    </div>
-                </div>
-                <div class="carrinho__card">
-                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
-                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
-                        <div class="carrinho__card-info">
-                            <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
-                            <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
-                        </div>
-                    </div>
-                    <div class="carrinho__card-coluna">
-                        <p class="carrinho__card-preco">R$ 28</p>
-                    </div>
-                    <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Quantidade: </h5>
-                        <div class="carrinho__card-coluna-botoes">
-                            <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
-                            <input type="number" name="fnumber" id="fnumber" value="2">
-                            <img src="./assets/icons/mais.svg" alt="Aumentar quantidade">
-                        </div>
-                    </div>
-                    <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Tamanho: </h5>
-                        <select name="fsize" id="fsize">
-                            <option value="PP">PP</option>
-                            <option value="P">P</option>
-                            <option value="M">M</option>
-                            <option value="G" selected>G</option>
-                            <option value="GG">GG</option>
-                            <option value="XG">XG</option>
-                            <option value="XGG">XGG</option>
-                        </select>
-                    </div>
-                    <div class="carrinho__card-coluna">
-                        <h5 class="carrrinho__card-subtitulo">Excluir</h5>
+                        <h5 class="carrinho__card-subtitulo">Excluir</h5>
                         <span class="material-symbols-outlined">delete</span>
                     </div>
                 </div>
@@ -225,7 +228,7 @@
                 <hr class="carrinho__sumario-divisor">
                 <div class="carrinho__sumario-linha carrinho__sumario-linha-total">
                     <div>
-                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <span class="material-symbols-outlined filled">shopping_bag</span>
                         <strong>
                             <p>Total:</p>
                         </strong>
@@ -234,8 +237,10 @@
                         <p>R$455</p>
                     </strong>
                 </div>
-                <button class="botao__continuar">Continuar comprando</button>
-                <button class="botao__pagamento">Ir para pagamento</button>
+                <div class="botoes__carrinho">
+                    <button class="botao__continuar">Continuar comprando</button>
+                    <button class="botao__pagamento">Ir para pagamento</button>
+                </div>
             </div>
         </div>
     </section>
