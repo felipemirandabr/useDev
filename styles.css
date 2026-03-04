@@ -39,6 +39,11 @@ main {
     display: none;
 }
 
+.icone__voltar {
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+}
+
 @media screen and (max-width: 1024px) {
     .material-symbols-outlined.invisible {
     display: inline-block;

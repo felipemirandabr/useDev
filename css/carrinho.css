@@ -215,6 +215,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+    .carrinho__titulo{
+        display: flex;
+        align-items: center;
+    }
     
     .carrinho_sumario-form input {
         width: 100%;
@@ -287,6 +292,10 @@
 @media screen and (max-width: 768px) {
     .carrinho {
         padding: 40px 24px;
+    }
+
+    .carrinho__titulo {
+        font-size: 16px;
     }
 
     .carrinho__card {
