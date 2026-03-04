@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=info" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=shopping_bag" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/promocoes.css">
+    <link rel="stylesheet" href="./css/newsletter.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/copyright.css">
+    <link rel="stylesheet" href="./css/detalhes.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <ul class="cabecalho__nav_list">
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-menu">
+                    <label for="menu">
+                        <img src="assets/icons/menu.svg" alt="menu">
+                    </label>
+                    <input type="checkbox" name="menu" id="menu" hidden>
+
+                    <nav class="cabecalho__menu-hamburguer">
+                        <ul>
+                            <li><a href="#" class="cabecalho__nav_list_link cabecalho__menu-hamburguer_link">Sobre
+                                    nós</a></li>
+                            <li><a href="#" class="cabecalho__nav_list_link cabecalho__menu-hamburguer_link">Login</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+
+                <li>
+                    <h1 class="cabecalho__logo">
+                        <a href="index.html"><img src="./assets/logo-favicon/logo.svg" alt="Logo da UseDev"></a>
+                    </h1>
+                </li>
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-sobre">
+                    <a href="#" class="cabecalho__nav_list_link">Sobre nós</a>
+                </li>
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-input">
+                    <input type="search" name="search" id="search" placeholder="O que você procura?"
+                        class="cabecalho__nav_list_input">
+                    <img src="./assets/icons/search.svg" alt="lupa" class="pesquisa-icon">
+                </li>
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-login">
+                    <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login">Login</a>
+                </li>
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-perfil">
+                    <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-perfil">
+                        <img src="./assets/icons/perfil.svg" alt="perfil">
+                    </a>
+                </li>
+                <li class="cabecalho__nav_list_item cabecalho__nav_list_item-carrinho">
+                    <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-carrinho">
+                        <img src="./assets/icons/carrinho.svg" alt="carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+    </section>
+    <section class="carrinho">
+        <h2 class="carrinho__titulo">Carrinho de Compras</h2>
+        <div class="carrinho__aviso">
+            <span class="material-symbols-outlined">info</span>
+            <p class="carrinho__aviso-texto">Atenção, os produtos no carrinho não ficam reservados. Finalize a compra
+                para garantir! :)</p>
+        </div>
+        <div class="carrinho__container">
+            <div class="carrinho__container-detalhes">
+                <h3 class="carrinho__container-titulo">Detalhes da compra</h3>
+                <div class="carrinho__card">
+                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
+                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        <div class="carrinho__card-info">
+                            <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
+                            <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <p class="carrinho__card-preco">R$ 28</p>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Quantidade: </h5>
+                        <div class="carrinho__card-coluna-botoes">
+                            <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
+                            <input type="number" name="fnumber" id="fnumber" value="2">
+                            <img src="./assets/icons/mais.svg" alt="Aumentar quantidade">
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Tamanho: </h5>
+                        <select name="fsize" id="fsize">
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G" selected>G</option>
+                            <option value="GG">GG</option>
+                            <option value="XG">XG</option>
+                            <option value="XGG">XGG</option>
+                        </select>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Excluir</h5>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <div class="carrinho__card">
+                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
+                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        <div class="carrinho__card-info">
+                            <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
+                            <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <p class="carrinho__card-preco">R$ 28</p>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Quantidade: </h5>
+                        <div class="carrinho__card-coluna-botoes">
+                            <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
+                            <input type="number" name="fnumber" id="fnumber" value="2">
+                            <img src="./assets/icons/mais.svg" alt="Aumentar quantidade">
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Tamanho: </h5>
+                        <select name="fsize" id="fsize">
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G" selected>G</option>
+                            <option value="GG">GG</option>
+                            <option value="XG">XG</option>
+                            <option value="XGG">XGG</option>
+                        </select>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Excluir</h5>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+                <div class="carrinho__card">
+                    <div class="carrinho__card-coluna carrinho__card-coluna-imagem">
+                        <img src="./assets/carrinho/camiseta-capy.png" alt="Camiseta Capy">
+                        <div class="carrinho__card-info">
+                            <h4 class="carrinho__card-titulo">Camiseta Capy</h4>
+                            <p class="carrinho__card-texto">Camiseta 100% algodão.</p>
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <p class="carrinho__card-preco">R$ 28</p>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Quantidade: </h5>
+                        <div class="carrinho__card-coluna-botoes">
+                            <img src="./assets/icons/menos.svg" alt="Diminuir quantidade">
+                            <input type="number" name="fnumber" id="fnumber" value="2">
+                            <img src="./assets/icons/mais.svg" alt="Aumentar quantidade">
+                        </div>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Tamanho: </h5>
+                        <select name="fsize" id="fsize">
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G" selected>G</option>
+                            <option value="GG">GG</option>
+                            <option value="XG">XG</option>
+                            <option value="XGG">XGG</option>
+                        </select>
+                    </div>
+                    <div class="carrinho__card-coluna">
+                        <h5 class="carrrinho__card-subtitulo">Excluir</h5>
+                        <span class="material-symbols-outlined">delete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carrinho__container-sumario">
+                <h3 class="carrinho__container-titulo">Sumário</h3>
+                <h4 class="carrinho__sumario-titulo">Cupom de desconto</h4>
+                <form class="carrinho_sumario-form" action="">
+                    <input type="text" name="cupom-desconto" id="cupom-desconto" placeholder="Digite o cupom">
+                    <button type="submit" value="Ok">Ok</button>
+                </form>
+                <h4 class="carrinho__sumario-titulo">Frete</h4>
+                <form class="carrinho_sumario-form" action="">
+                    <input type="text" name="cupom-frete" id="cupom-frete" placeholder="Digite o cupom">
+                    <button type="submit">Ok</button>
+                </form>
+                <hr class="carrinho__sumario-divisor">
+                <div class="carrinho__sumario-linha">
+                    <p>03 Produtos</p>
+                    <strong>
+                        <p>R$ 210</p>
+                    </strong>
+                </div>
+                <div class="carrinho__sumario-linha">
+                    <strong>
+                        <p>Frete</p>
+                    </strong>
+                    <strong>
+                        <p>R$ 8</p>
+                    </strong>
+                </div>
+                <hr class="carrinho__sumario-divisor">
+                <div class="carrinho__sumario-linha carrinho__sumario-linha-total">
+                    <div>
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <strong>
+                            <p>Total:</p>
+                        </strong>
+                    </div>
+                    <strong>
+                        <p>R$455</p>
+                    </strong>
+                </div>
+                <button class="botao__continuar">Continuar comprando</button>
+                <button class="botao__pagamento">Ir para pagamento</button>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="rodape__linha">
+            <div class="rodape__coluna rodape__coluna_logo">
+                <img src="assets/logo-favicon/logo-verde.svg" alt="logo da UseDev">
+                <p class="rodape__coluna_logo_texto">Hora de abraçar seu lado geek!</p>
+            </div>
+            <div class="rodape__coluna">
+                <h5 class="rodape__coluna_titulo">Funcionamento</h5>
+                <ul class="rodape__coluna_list">
+                    <li class="rodape__coluna_list_item">Segunda a Sexta - 8h às 18h</li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="mailto:sac@usedev.com.br">
+                            sac@usedev.com.br
+                        </a>
+                    </li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="tel:+550800541320">
+                            0800 541 320
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h5 class="rodape__coluna_titulo">Institucional</h5>
+                <nav>
+                    <ul class="rodape__coluna_list">
+                        <li class="rodape__coluna_list_item">
+                            <a href="#">
+                                Sobre nós
+                            </a>
+                        </li>
+                        <li class="rodape__coluna_list_item">
+                            <a href="#">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="rodape__coluna_list_item">
+                            <a href="#">
+                                Política de Privacidade
+                            </a>
+                        </li>
+                        <li class="rodape__coluna_list_item">
+                            <a href="#">
+                                LGPD - Lei de proteção de dados
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="rodape__coluna">
+                <h5 class="rodape__coluna_titulo">Informações</h5>
+                <nav class="rodape__coluna_list">
+                    <li class="rodape__coluna_list_item">
+                        <a href="#">
+                            Entregas
+                        </a>
+                    </li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="#">
+                            Garantia
+                        </a>
+                    </li>
+                    <li class="rodape__coluna_list_item">
+                        <a href="#">
+                            Trocas e devoluções
+                        </a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="rodape__linha">
+            <div class="rodape__coluna">
+                <h5 class="rodape__coluna_titulo rodape__coluna_titulo-center">Formas de Pagamento</h5>
+                <ul class="rodape__coluna_list-cartao">
+                    <li>
+                        <img src="assets/icons/ico-cartao-visa.svg" alt="Visa">
+                    </li>
+                    <li>
+                        <img src="assets/icons/ico-cartao-master.svg" alt="MasterCard">
+                    </li>
+                    <li>
+                        <img src="assets/icons/ico-cartao-elo.svg" alt="Elo">
+                    </li>
+                    <li>
+                        <img src="assets/icons/ico-cartao-diners.svg" alt="Diners Club">
+                    </li>
+                    <li>
+                        <img src="assets/icons/ico-pix.svg" alt="Pix">
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h5 class="rodape__coluna_titulo rodape__coluna_titulo-center">Siga nossas redes:</h5>
+                <ul class="rodape__coluna_list-redes-sociais">
+                    <li>
+                        <a href="#"><img src="assets/icons/Whatsapp.svg" alt="Whatsapp"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icons/Instragam.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icons/Tiktok.svg" alt="Tiktok"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <p class="rodape__copyright_texto">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </section>
+    <div class="rodape__copyright">
+    </div>
+</body>
+
+</html>

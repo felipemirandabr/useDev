@@ -1,0 +1,202 @@
+.carrinho {
+    padding: 80px 10%;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-principal);
+    line-height: 120%;
+}
+
+.carrinho__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.carrinho__titulo {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 24px;
+}
+
+.carrinho__aviso {
+    background-color: #EFEFEF;
+    max-width: 975px;
+    text-align: center;
+    margin: 32px auto 16px auto;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 16px;
+    font-size: 20px;
+}
+
+.carrinho__container-detalhes, .carrinho__container-sumario {
+    background-color: #EFEFEF;
+    padding: 32px;
+}
+
+.carrinho__container-titulo {
+    font-size: 25px;
+    margin-bottom: -32px;
+    font-weight: 700;
+}
+
+.carrinho__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.carrinho__card-coluna-imagem {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 340px;
+}
+
+.carrinho__card-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.carrinho__card-texto {
+    font-size: 16px;
+    text-align: left;
+}
+
+.carrinho__card-preco {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.carrrinho__card-subtitulo {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carrinho__card-coluna {
+    text-align: center;
+}
+
+.carrinho__card-coluna-botoes {
+    display: flex;
+    gap: 8px;
+    height: 32px;
+}
+
+.carrinho__card-coluna-botoes input {
+    background-color: transparent;
+    border: 1px solid var(--cor-texto-principal);
+    border-radius: 4px;
+    width: 40px;
+    text-align: center;
+    padding-left: 12px;
+    font-family: var(--fonte-texto);
+    font-size: 13px;
+    color: var(--cor-texto-principal);
+}
+
+.carrinho__card-coluna select {
+    background-color: transparent;
+    border: 1px solid var(--cor-texto-principal);
+    border-radius: 32px;
+    text-align: center;
+    height: 40px;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    color: var(--cor-texto-principal);
+}
+
+.carrinho__container-sumario h3{
+    margin-bottom: 32px;
+}
+
+.carrinho__sumario-titulo {
+    font-size: 20px;
+}
+
+.carrinho_sumario-form input{
+    background-color: transparent;
+    border: 2px solid var(--cor-texto-principal);
+    border-radius: 32px;
+    padding: 16px 24px;
+    height: 40px;
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    color: var(--cor-texto-principal);
+    margin: 16px 8px 32px 0;
+    height: 56px;
+}
+
+.carrinho_sumario-form input::placeholder{
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    color: var(--cor-texto-principal);
+    margin-right: 8px;
+}
+
+.carrinho_sumario-form button {
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-de-fundo);
+    padding: 0 24px;
+    border: none;
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 32px;
+    height: 56px;
+}
+
+.carrinho__sumario-divisor {
+    border: none;
+    background-color: var(--cor-fundo-botao);
+    height: 1px;
+    margin-bottom: 32px;
+}
+
+.carrinho__sumario-linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.carrinho__sumario-linha-total {
+    color: var(--cor-fundo-botao);
+}
+
+.carrinho__sumario-linha div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.botao__continuar {
+    width: 100%;
+    padding: 16px;
+    border-radius: 32px;
+    font-size: 22px;
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    border: 2px solid var(--cor-fundo-botao);
+    margin-bottom: 16px;
+}
+
+.botao__pagamento {
+    width: 100%;
+    padding: 16px;
+    border-radius: 32px;
+    font-size: 22px;
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-de-fundo);
+    border: none;
+}
